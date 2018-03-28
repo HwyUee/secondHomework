@@ -3,10 +3,7 @@ package cn.school.thoughtworks.section2;
 import org.junit.Before;
 import org.junit.Test;
 
-import java.util.Arrays;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 import static org.junit.Assert.assertEquals;
 
@@ -33,7 +30,7 @@ public class PracticeCTest {
                 "d-5"
         );
 
-        Map<String, Integer> expectedResult = new HashMap<String, Integer>() {{
+        Map<String, Integer> expectedResult = new LinkedHashMap<String, Integer>(){{
             put("a", 3);
             put("e", 7);
             put("h", 11);

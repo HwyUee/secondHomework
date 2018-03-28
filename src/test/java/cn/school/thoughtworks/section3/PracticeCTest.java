@@ -34,7 +34,7 @@ public class PracticeCTest {
         );
 
         List<String> list = Arrays.asList("a", "d", "e", "f");
-        Map<String, List<String>> collection2 = new HashMap<>();
+        Map<String, List<String>> collection2 = new HashMap();
         collection2.put("value", list);
 
         Map<String, Integer> result = practiceC.createUpdatedCollection(collection1, collection2);
